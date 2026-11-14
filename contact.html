@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO-Friendly Meta Tags -->
+  <title>Contact | Harini K Portfolio</title>
+  <meta name="description" content="Get in touch with Harini K for collaboration, internships, or project inquiries.">
+  <meta name="author" content="Harini K">
+</head>
+<body>
+
+  <a href="#main-content">Skip to main content</a>
+
+  <header role="banner">
+    <h1>Harini K</h1>
+    <nav aria-label="Primary Navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" role="main">
+    <section aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <p>Use the form below to send a message. All fields marked with an asterisk (*) are required.</p>
+
+      <!-- Accessible, Tab-Navigable Form -->
+      <form action="#" method="post" aria-labelledby="contact-heading">
+        <fieldset>
+          <legend>Sender Information</legend>
+
+          <div>
+            <label for="full-name">Full Name <span aria-hidden="true">*</span></label><br>
+            <input 
+              type="text" 
+              id="full-name" 
+              name="full_name" 
+              required 
+              aria-required="true" 
+              autocomplete="name"
+              placeholder="e.g., Jane Doe">
+          </div>
+          <br>
+
+          <div>
+            <label for="email-address">Email Address <span aria-hidden="true">*</span></label><br>
+            <input 
+              type="email" 
+              id="email-address" 
+              name="email" 
+              required 
+              aria-required="true" 
+              autocomplete="email"
+              aria-describedby="email-help"
+              placeholder="e.g., jane@example.com">
+            <br>
+            <small id="email-help">Your email will only be used to reply to your inquiry.</small>
+          </div>
+        </fieldset>
+        <br>
+
+        <fieldset>
+          <legend>Message Details</legend>
+
+          <div>
+            <label for="inquiry-topic">Reason for Contact</label><br>
+            <select id="inquiry-topic" name="topic">
+              <option value="collaboration">Project Collaboration</option>
+              <option value="internship">Internship / Opportunity</option>
+              <option value="general">General Question</option>
+            </select>
+          </div>
+          <br>
+
+          <div>
+            <label for="message-body">Message <span aria-hidden="true">*</span></label><br>
+            <textarea 
+              id="message-body" 
+              name="message" 
+              rows="5" 
+              cols="40" 
+              required 
+              aria-required="true"
+              placeholder="Write your message here..."></textarea>
+          </div>
+        </fieldset>
+        <br>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Harini K. Built with semantic HTML5.</p>
+  </footer>
+
+</body>
+</html>
